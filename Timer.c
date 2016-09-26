@@ -43,7 +43,6 @@ static TimeType torch_Timer_realtime()
   struct timeval current;
   gettimeofday(&current, NULL);
   return (current.tv_sec + current.tv_usec/1000000.0);
-#endif
 }
 
 static TimeType torch_Timer_usertime()
