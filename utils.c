@@ -78,11 +78,6 @@ static int torch_isatty(lua_State *L)
   return 1;
 }
 
-#ifdef _WIN32
-#include <windows.h>
-static __declspec( thread ) __int64 ticksPerSecond = 0;
-#endif
-
 static double real_time()
 {
 #ifdef _WIN32
